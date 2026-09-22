@@ -1,0 +1,443 @@
+Reset
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #fff;
+}
+
+/* Header */
+* .header {
+    height: 48px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 55px;
+    background: #fff;
+} */
+
+/* Left Icons */
+* .left-icons {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.left-icons i {
+    font-size: 17px;
+    color: #17172f;
+    cursor: pointer;
+} */
+
+* Logo
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.logo img {
+    width: 35px;
+    height: 35px;
+    object-fit: contain;
+}
+
+* * .logo-text h3 {
+    font-size: 16px;
+    font-weight: 800;
+    color: #202039;
+} */
+
+.logo-text p {
+    font-size: 14px;
+    color: #777;
+}
+
+Right Icons
+.right-icons {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.right-icons i {
+    font-size: 18px;
+    color: #17172f;
+    cursor: pointer;
+}
+
+/* Color Line */
+* .color-line {
+    height: 3px;
+    background: linear-gradient(
+        to right,
+        #003cff 0%,
+        #003cff 50%,
+        #e90046 50%,
+        #e90046 100%
+    );
+} */
+
+/* Hero Section */
+* .hero {
+    width: 100%;
+    height: calc(100vh - 51px);
+    min-height: 450px;
+
+    background-image: url("c:\Users\San Tola\Downloads\BARÇA CHAMPIONS LEAGUE 2027.jfif");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    position: relative;
+} 
+
+/* Hero Content */
+.hero-content {
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 100%;
+    text-align: center;
+}
+
+/* Title */
+.hero-content h1 {
+    color: white;
+    font-size: 40px;
+    font-weight: 900;
+    margin-bottom: 15px;
+
+    text-shadow: 2px 2px 4px #333;
+}
+
+/* Buttons */
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+
+.buttons button {
+    width: 160px;
+    height: 45px;
+
+    border: none;
+    border-radius: 4px;
+
+    background-color: #ffc629;
+    color: #111b3b;
+
+    font-size: 13px;
+    font-weight: bold;
+
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.buttons button:hover {
+    background-color: #e5aa00;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+
+    .header {
+        padding: 0 20px;
+    }
+
+    .left-icons,
+    .right-icons {
+        gap: 15px;
+    }
+
+    .logo-text h3 {
+        font-size: 13px;
+    }
+
+    .logo-text p {
+        font-size: 11px;
+    }
+
+    .hero-content h1 {
+        font-size: 28px;
+    }
+
+    .buttons button {
+        width: 30%;
+        height: 42px;
+    }
+} */
+
+
+/* ========================================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: white;
+}
+
+/* Header */
+.header {
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 55px;
+    background: #fff;
+}
+
+/* Left Icons */
+.left-icons {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.menu {
+    font-size: 22px;
+    color: #202039;
+    cursor: pointer;
+}
+
+.search {
+    font-size: 32px;
+    color: #202039;
+    cursor: pointer;
+}
+
+/* Logo */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    text-align: left;
+}
+
+.logo img {
+    width: 35px;
+    height: 35px;
+    object-fit: contain;
+}
+
+.logo h3 {
+    font-size: 16px;
+    color: #202039;
+    margin: 0;
+}
+
+.logo p {
+    font-size: 14px;
+    color: #777;
+    margin: 0;
+}
+
+/* Right Icons */
+.right-icons {
+    display: flex;
+    gap: 30px;
+    font-size: 25px;
+    color: #202039;
+}
+
+/* Color Line */
+.color-line {
+    height: 3px;
+    background: linear-gradient(
+        to right,
+        #004dff 50%,
+        #ed174c 50%
+    );
+}
+
+/* Hero Section */
+.hero {
+    height: calc(100vh - 51px);
+    min-height: 450px;
+    background-image: url("hero-image.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+/* Dark Overlay */
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.05);
+}
+
+/* Hero Content */
+.hero-content {
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    width: 100%;
+}
+
+.hero h1 {
+    color: white;
+    font-size: 42px;
+    font-weight: 900;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 4px #333;
+}
+
+/* Buttons */
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+
+.buttons button {
+    width: 160px;
+    height: 45px;
+    background: #ffc629;
+    color: #111b3b;
+    border: none;
+    border-radius: 4px;
+    font-size: 13px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.buttons button:hover {
+    background: #e6aa00;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+
+    .header {
+        padding: 0 20px;
+    }
+
+    .logo h3 {
+        font-size: 13px;
+    }
+
+    .logo p {
+        font-size: 11px;
+    }
+
+    .left-icons,
+    .right-icons {
+        gap: 15px;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .buttons button {
+        width: 30%;
+        height: 42px;
+    }
+
+    .hero {
+        background-position: center;
+    }
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ffffff;
+    font-family: Arial, sans-serif;
+    padding: 60px;
+}
+
+/* Title */
+h1 {
+    font-size: 36px;
+    font-weight: 900;
+    color: #171a3a;
+    margin-bottom: 40px;
+    letter-spacing: -1px;
+}
+
+/* Players Container */
+.players-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+}
+
+/* Player Card */
+.player-card {
+    height: 565px;
+    position: relative;
+    overflow: hidden;
+    background-color: #061b2b;
+}
+
+/* Player Image */
+.player-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Player Name */
+.player-name {
+    position: absolute;
+    bottom: 24px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 3px #000;
+}
+
+/* Tablet */
+@media (max-width: 1000px) {
+    .players-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    body {
+        padding: 20px;
+    }
+
+    .players-container {
+        grid-template-columns: 1fr;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    .player-name {
+        font-size: 24px;
+    }
+}
